@@ -1,0 +1,153 @@
+*{
+    /* outline:1px dotted red; */
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    margin:0;
+    font-family: "Open Sans", sans-serif;
+    color:beige;
+    padding:0;
+}
+
+body{
+    background: linear-gradient(45deg,#e06868 , #9198e5);
+}
+.about, .projects, .contact{
+    height:100vh;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.navbar{
+    position: fixed;
+    top:0;
+    left:0;
+    font-size: ;
+    width:100%;
+    display:flex;
+    justify-content: end;
+    align-items: center;
+    transition: 0.6s;
+    padding: 40px 100px;
+    background-color: rgba(101, 135, 228, 0.9);
+}
+
+header ul{
+    position:relative;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+}
+
+header ul li{
+    position:relative;
+}
+
+header ul li a{
+    position:relative;
+    margin:0 15px;
+    font-size: 1.3rem;
+    letter-spacing: 2px;
+    font-weight:500px;
+}
+
+.about, .contact{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: nowrap;
+    line-height: 1.5;
+}
+
+.about p{
+    color:#d42b2b;
+}
+
+img{
+    width:15%;
+}
+
+.about h1{
+    font-size: 5rem;
+}
+
+a:link { text-decoration: none; }
+
+p{
+    font-size: 1.75em;
+}
+
+@media (hover:hover){
+    .navbar a:hover{
+        background-color: rgb(101, 150, 192);
+    }
+    .contact a:hover{
+        background-color: rgb(101, 150, 192);
+    }
+    footer a:hover{
+        background-color: rgb(101, 150, 192);
+    }
+    .project-link:hover{
+        background-color: rgb(101, 150, 192);
+    }
+}
+
+
+.projects{
+    display: flex;
+    flex-direction: column;
+}
+
+.project-tile{
+    margin-top: 50px;
+} 
+
+.project-tile p{
+    text-align: center;
+}
+
+
+.grid{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-gap: 4rem;
+    width: 85%;
+}
+
+.project-pic{
+    height: 100%;
+    width: 100%;
+    object-fit: fill;
+}
+
+
+.contact h1, .projects h1{
+    font-size: 3rem;
+}
+
+.contact-method{
+    display: flex;
+    font-size: 2rem;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-top: 60px;
+}
+
+.contact-link{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin: 50px;
+}
+
+.fa-brands, .fa-solid{
+    margin-right: 5px;
+}
+
+footer{
+    text-align: center;
+    border-top: 4px solid rgb(128, 56, 56);
+    padding: 20px; 
+}
